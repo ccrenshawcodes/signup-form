@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -60,10 +62,27 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 .header {
     flex: 1;
+    height: 100vh;
+    background-image: url("szabo-viktor-28ZbKOWiZfs-unsplash.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header > h1, .header > p, p > a {
+    background: transparent;
+    text-align: center;
+    color: black;
+}
+
+.header > h1 {
+    font-size: x-large;
 }
 
 .content {
@@ -76,12 +95,19 @@ body {
 }
 
 button {
-    padding: 10px 30px;
+    padding: 10px 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 30px 0px;
+    background-color: rgb(66, 219, 212);
+    border-radius: 7px;
 }
 
 .popout {
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 1px 4px 10px -3px black;
 }
 
 .item {
