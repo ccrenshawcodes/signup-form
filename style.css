@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -95,6 +97,8 @@ button, input {
 .banner > h1 {
     font-size: x-large;
     color: white;
+    font-family: 'Titan One', cursive;
+    letter-spacing: .2em;
 }
 
 .header > p {
@@ -169,3 +173,4 @@ input:focus {
 input:invalid {
     border: 1.5px solid red;
 }
+
