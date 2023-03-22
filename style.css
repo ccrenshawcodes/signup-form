@@ -66,51 +66,97 @@ body {
     
 }
 
+button, input {
+    font-family: inherit;
+    font-size: 100%;
+}
+
 .header {
     flex: 1;
     height: 100vh;
     background-image: url("szabo-viktor-28ZbKOWiZfs-unsplash.jpg");
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.header > h1, .header > p, p > a {
+.banner > h1, .header > p, p > a {
     background: transparent;
     text-align: center;
     color: black;
 }
 
-.header > h1 {
+.banner {
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 30vh;
+    padding: 35px;
+}
+
+.banner > h1 {
     font-size: x-large;
+    color: white;
+}
+
+.header > p {
+    font-size: x-small;
+    position: relative;
+    top: 85vh;
 }
 
 .content {
     flex: 2;
-    padding: 15px;
 }
 
 .cta, .popout, .footer {
     padding: 50px 0px;
 }
 
+.cta, .footer, .arow, .brow {
+    margin-left: 30px;
+}
+
 button {
     padding: 10px 40px;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    margin: 30px 0px;
+    margin: 30px;
     background-color: rgb(66, 219, 212);
     border-radius: 7px;
+    border: none;
+    box-shadow: 1px 4px 10px -3px black;
 }
 
 .popout {
     display: flex;
-    flex-wrap: wrap;
-    background-color: white;
+    flex-direction: row;
+    align-items:stretch;
+    justify-content: space-evenly;
     box-shadow: 1px 4px 10px -3px black;
 }
 
-.item {
-    flex: 1;
+.popout, .arow, .brow, label, input {
+    background-color: white;
+}
+
+input, label {
+    display: block;
     margin: 10px 0px;
+}
+
+.arow, .brow {
+    flex: 1;
+    height: 100%;
+}
+
+input {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1.5px solid rgb(209, 209, 209);
+    outline: none;
+}
+
+input:focus {
+    border: 1.5px solid rgb(31, 197, 242);
 }
