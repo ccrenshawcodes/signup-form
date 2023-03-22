@@ -10,14 +10,18 @@
 <body>
 
     <div class="header">
-        <h1>My form</h1>
+        <div class="banner">
+            <h1>SIGN UP TODAY</h1>
+        </div>
+        
         <p>Image by <a href="https://unsplash.com/@vmxhu">Szabo Viktor</a> on <a href="https://unsplash.com/@vmxhu">Unsplash</a></p>
     </div>
 
     <div class="content">
 
         <div class="cta">
-            <p>Not a real service, but sign up anyway please!</p>
+            <p>This isn't a real service, but doesn't that make it that much more interesting? This is exactly what you need. </p>
+            <p>Sign up now.</p>
         </div>
 
         <form action="post">
@@ -30,8 +34,8 @@
                     <label for="email">Email address</label>
                     <input type="email" id="email" />
 
-                    <label for="pwd">Password</label>
-                    <input type="password" id="pwd" />
+                    <label for="pwd">Password*</label>
+                    <input type="password" id="pwd" required />
                 </div>
 
                 <div class="brow">
@@ -41,8 +45,8 @@
                     <label for="number">Phone Number</label>
                     <input type="text" id="number" />
 
-                    <label for="confirm">Confirm Password</label>
-                    <input type="password" id="confirm" />
+                    <label for="confirm">Confirm Password*</label>
+                    <input type="password" id="confirm" required/>
                 </div>
                 
             </div>
